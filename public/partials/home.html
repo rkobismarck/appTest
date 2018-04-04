@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <h2 class="text-error">Lista de Post</h2>
+    <ul class="list-group">
+        <li class="list-group-item" ng-click="obtenerDetalleElemento(elemento.id)" ng-repeat="elemento in elementos | limitTo: 3" >{{elemento.title}}</li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+      <h2 class="text-error">Detalles del Post</h2>
+      <div>
+        <span ng-if="elementoDetalle == undefined">Selecciona un elemento de la lista:</span>
+      </div>
+      <ul class="list-group">
+          <li class="list-group-item" ng-repeat="detalle in elementoDetalle" >
+            <label class="font-weight-bold">id:</label><span>{{detalle.postId}}</span><br>
+            <label class="font-weight-bold">autor:</label><span>{{detalle.name}}</span><br>
+            <label class="font-weight-bold">correo:</label><span>{{detalle.email}}</span><br>
+            <label class="font-weight-bold">mensaje:</label><span>{{detalle.body}}</span>
+          </li>
+      </ul>
+  </div>
+</div>
