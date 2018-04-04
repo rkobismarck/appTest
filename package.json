@@ -4,6 +4,7 @@
   "description": "SPA Angular.",
   "main": "server.js",
   "author": "RCTT",
+  "scripts": { "start" : "node server.js" },
   "dependencies": {
     "body-parser": "^1.4.3",
     "express": "^4.13.4",
