@@ -1,6 +1,6 @@
-# Node Todo App
+# TestApp
 
-A Node app built with Angular. 
+A NodeJS Served  app built with AngularJS. 
 
 ## Requirements
 
